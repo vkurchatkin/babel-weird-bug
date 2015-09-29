@@ -5,6 +5,7 @@ import { Cls } from './lib.js';
 class Application {
   run() {
     new Cls();
+    console.log('Ok');
   }
 }
 

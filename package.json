@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "BABEL_DISABLE_CACHE=1 node run.js"
+    "test": "BABEL_DISABLE_CACHE=1 node run.js",
+    "test-compiled": "npm run compile && node ./src-compiled/main.js",
+    "compile": "babel src --out-dir src-compiled"
   },
   "author": "",
   "license": "ISC",
